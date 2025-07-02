@@ -1,0 +1,107 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #a1844b;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    text-decoration:dotted ;
+}
+
+.titulo-secundario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+}
+
+
+.botones{
+    display: flex ;
+    height: 100vh;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    margin: 20px;
+    width: 170px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    border: 2px solid #d8a750;
+    opacity: 0.5;
+    text-decoration:none;
+    border-radius: 20px;
+    background-color: #d3b276;
+}
+
+button:hover{
+    background-color: #d3b276;
+    cursor: pointer;
+    display: flex;
+    margin: 20px;
+    width: 200px;
+    height: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.parrafo-principal {
+    height: 100vh;
+    max-width: auto;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.parrafo-expandible {
+    width: 1000px;
+    height: 150px;
+    background-color: #d3b276;
+    opacity: 0.3;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease;
+    transform-origin: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo-expandible:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    background-color: #eaae44;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.contenido-parrafo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95238);
+    transform-origin: center center;
+    width: 100%;
+    text-align: left;
+    line-height: 1.5;
+    box-sizing: border-box;
+    transition: transform 0.4s ease-out; 
+}
